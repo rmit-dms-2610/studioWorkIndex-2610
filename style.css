@@ -32,6 +32,19 @@ main {
     margin: 0 auto;
 }
 
+h3 {
+    padding: 1rem 0 0 0;
+}
+
 section {
     border-top: var(--colour-1) solid 1px;
+    padding: 1rem 0;
+}
+
+p {
+    padding: 1rem 0;
+}
+
+ol, ul {
+    padding: revert;
 }
