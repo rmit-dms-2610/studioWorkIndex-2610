@@ -1,4 +1,27 @@
-body {
-    background-color: black;
-    color: white;
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    /* basic 2-bit palette from 1bit Monitor Glow Palette by Polyducks */
+    /* https://lospec.com/palette-list/1bit-monitor-glow */
+    --colour-1: #222323;
+    --colour-2: #f0f6f0;
+    --colour-3: #2297CE;
+    --colour-4: #e97132;
+}
+
+/* this swaps the colour order to account for dark mode */
+@media (prefers-color-scheme: dark) {
+    :root{
+        --colour-1: #f0f6f0;
+        --colour-2: #222323;
+        --colour-3: #e97132;
+        --colour-4: #2297CE;
+    }
+}
+
+body{
+    background-color: var(--colour-2);
+    color: var(--colour-1);
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.5;
 }
