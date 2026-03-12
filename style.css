@@ -2,3 +2,8 @@ body {
     background-color: black;
     color: white;
 }
+
+main {
+    max-width: 1080px;
+    margin: 3rem 3rem;
+}
