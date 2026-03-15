@@ -2,6 +2,7 @@
 const introDialog = document.getElementById("intro-dialog");
 const dialogCloseButton = document.getElementById("dialog-close-button");
 const playButton = document.getElementById("play-button");
+const mainElement = document.getElementById("mainElm");
 
 //// TONE INIT
 // set up our basic synth
@@ -38,6 +39,7 @@ function noteOn() {
 
 playButton.addEventListener("mousedown", () => {
     noteOn();
+    mainElement.style.backgroundColor = "red";
 });
 
 function noteOff() {
@@ -46,4 +48,5 @@ function noteOff() {
 
 playButton.addEventListener("mouseup", () => {
     noteOff();
+    mainElement.style.backgroundColor = "white";
 });
