@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>changeMe!</title>
+
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="mappingStyle.css">
+
+    <script src="https://unpkg.com/konva@10/konva.min.js"></script>
+
+    <script src="mappingMain.js" defer></script>
+</head>
+<body>
+
+    <main>
+        <div class="toolBar">
+            <h1>Konva Template</h1>
+            <button id="circle-button">Draw a Circle</button>
+
+            <fieldset>
+                <legend>Select circle colour:</legend>
+
+                <div>
+                    <input type="radio" name="colourSelector" id="selectCornflower" value="cornflowerblue">
+                    <label for="selectCornflower">Cornflower</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="colourSelector" id="selectOrchid" value="orchid">
+                    <label for="selectOrchid">Orchid</label>
+                </div>
+
+            </fieldset>
+
+
+
+        </div>
+
+        <div class="stageContainer" id="stage-container">
+            <div id="konva-stage"></div>
+        </div>
+    </main>
+
+</body>
+</html>
